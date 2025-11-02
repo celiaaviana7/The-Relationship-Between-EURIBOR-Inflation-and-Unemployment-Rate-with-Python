@@ -3,7 +3,7 @@ The project is analyzing the behavior of EURIBOR and try to estimate it using ma
 
 ## About
 
-This project analyzes the behavior of **EURIBOR** and tries to estimate it using macroeconomic variables.  
+This project analyzes the behavior of **EURIBOR** and tries to estimate it using macroeconomic variables.
 The goal is to **explain and predict short-term interest rates (EURIBOR)** based on macroeconomic drivers:
 - **Inflation** (measured using HICP index)
 - **Unemployment rate**
@@ -27,18 +27,18 @@ Key Questions:
 
 ---
 
-## Data
+## Data & Sources
 
-- EURIBOR rates  
-- HICP (inflation index, also used as proxy in the EU)  
-- Unemployment rate (labor market indicator)
+- [EURIBOR rates](https://www.euribor-rates.eu/en/)
+- [HICP (inflation index, also used as proxy in the EU)](https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_midx__custom_18622429/default/table)
+- [Unemployment rate (labor market indicator)](https://ec.europa.eu/eurostat/databrowser/view/ei_lmhr_m__custom_18622722/default/table)
 
 All data is treated as time series and aligned by month.
 
 Time horizon: **Jan 2015 → 2024** to capture:
 - Negative/zero-rate environment
 - COVID shock
-- ECB tightening cycle
+- ECB moves on those periods
 
 ---
 
@@ -53,8 +53,8 @@ Time horizon: **Jan 2015 → 2024** to capture:
    - Visual comparison before/during/after COVID
 
 3. **Regression/modelling (Multiple Regression & Random Forest)**
-   - Use inflation and unemployment as independent variables  
-   - Try to explain EURIBOR level as the dependent variable  
+   - Use inflation and unemployment as independent variables
+   - Try to explain EURIBOR level as the dependent variable
    - Evaluate how strong each driver is
 
 4. **Interpretation**
@@ -64,21 +64,21 @@ Time horizon: **Jan 2015 → 2024** to capture:
 
 ## Repository structure
 
-- `data/`  
+- `data/`
   Raw/cleaned macroeconomic data (EURIBOR, HICP, and unemployment)
 
-- `notebooks/`  
+- `notebooks/`
   Jupyter notebook with:
   - preprocessing
   - visualizations
   - regression/prediction
 
-- `README.md`  
+- `README.md`
   Project description (this file)
 
 ---
 
-## Summary / Why it matters
+## Summary/Why it matters
 
 EURIBOR is strongly influenced by:
 - **inflation pressure** (high inflation → central bank reacts → higher rates)
@@ -100,6 +100,6 @@ This project shows how macro variables can be used to understand and forecast in
 - Dang Anh Minh
 - Nour El Houda Harzallah
 - Thanatip Trisurat
-  
+
 MSc International Finance (Rennes School of Business)  
 Focus: Financial markets, macroeconomics, and data analysis with Python
