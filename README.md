@@ -22,7 +22,7 @@ The analysis period is **2015–2024** to compare 3 period of time:
 - Build a simple predictive model using Python.
 
 Key Questions:  
-📈 *Does high inflation and low unemployment “force” EURIBOR to go up?*  
+📈 *Does high inflation and low unemployment affect EURIBOR to go up?*  
 📉 *What happens when inflation is low and unemployment is high?*
 
 ---
@@ -48,7 +48,7 @@ Time horizon: **Jan 2015 → 2024** to capture:
    - Importing macroeconomic series into Python
    - Merging into one dataframe by date
 
-2. **Exploratory analysis & Normality Test**
+2. **Exploratory analysis, Normality Test, & Hypothesis Testing**
    - Trend plots of EURIBOR, inflation, and unemployment
    - Visual comparison before/during/after COVID
 
@@ -68,16 +68,10 @@ Time horizon: **Jan 2015 → 2024** to capture:
   Raw/cleaned macroeconomic data (EURIBOR, HICP, and unemployment)
 
 - `notebooks/`  
-  Jupyter notebooks with:
+  Jupyter notebook with:
   - preprocessing
   - visualizations
   - regression/prediction
-
-- `figures/`  
-  Exported charts (time series, scatter plots, etc.)
-
-- `models/`  
-  Model output and summaries
 
 - `README.md`  
   Project description (this file)
@@ -101,10 +95,11 @@ This project shows how macro variables can be used to understand and forecast in
 
 ## Author
 
-Celia Aviana
-Nguyen Minh Anh
-Dang Anh Minh
-Nour El Houda Harzallah
-Thanatip Trisurat
+- Celia Aviana
+- Nguyen Minh Anh
+- Dang Anh Minh
+- Nour El Houda Harzallah
+- Thanatip Trisurat
+  
 MSc International Finance (Rennes School of Business)  
 Focus: Financial markets, macroeconomics, and data analysis with Python
